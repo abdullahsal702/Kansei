@@ -14,6 +14,16 @@
 		F4DA6C832CE0969400600C50 /* DailyHabitCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4DA6C822CE0969400600C50 /* DailyHabitCard.swift */; };
 		F4DA6C852CE096C700600C50 /* ContinuousHabitCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4DA6C842CE096C700600C50 /* ContinuousHabitCard.swift */; };
 		F4DA6C872CE096E400600C50 /* WeeklyHabitCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4DA6C862CE096E400600C50 /* WeeklyHabitCard.swift */; };
+		F4DA6C8A2CE2B93000600C50 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4DA6C892CE2B93000600C50 /* HomeView.swift */; };
+		F4DA6C8C2CE2B96000600C50 /* StatsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4DA6C8B2CE2B96000600C50 /* StatsView.swift */; };
+		F4DA6C8E2CE2BB5400600C50 /* DailyHabitsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4DA6C8D2CE2BB5400600C50 /* DailyHabitsView.swift */; };
+		F4DA6C922CE2BBC700600C50 /* ContinuousHabitsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4DA6C912CE2BBC700600C50 /* ContinuousHabitsView.swift */; };
+		F4DA6C942CE2BBEB00600C50 /* WeeklyHabitsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4DA6C932CE2BBEB00600C50 /* WeeklyHabitsView.swift */; };
+		F4DA6C972CE2C38600600C50 /* TodoItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4DA6C962CE2C38600600C50 /* TodoItem.swift */; };
+		F4DA6C9C2CE2C9CC00600C50 /* ContinuousHabitDetailsCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4DA6C9B2CE2C9CC00600C50 /* ContinuousHabitDetailsCard.swift */; };
+		F4DA6CA12CE2D77A00600C50 /* AddContinuousHabitView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4DA6CA02CE2D77A00600C50 /* AddContinuousHabitView.swift */; };
+		F4DA6CA52CE2D90700600C50 /* AnalyzeHabitView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4DA6CA42CE2D90700600C50 /* AnalyzeHabitView.swift */; };
+		F4DA6CA72CE2DC0300600C50 /* EditContinuousHabit.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4DA6CA62CE2DC0300600C50 /* EditContinuousHabit.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +35,16 @@
 		F4DA6C822CE0969400600C50 /* DailyHabitCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyHabitCard.swift; sourceTree = "<group>"; };
 		F4DA6C842CE096C700600C50 /* ContinuousHabitCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContinuousHabitCard.swift; sourceTree = "<group>"; };
 		F4DA6C862CE096E400600C50 /* WeeklyHabitCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeeklyHabitCard.swift; sourceTree = "<group>"; };
+		F4DA6C892CE2B93000600C50 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		F4DA6C8B2CE2B96000600C50 /* StatsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatsView.swift; sourceTree = "<group>"; };
+		F4DA6C8D2CE2BB5400600C50 /* DailyHabitsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyHabitsView.swift; sourceTree = "<group>"; };
+		F4DA6C912CE2BBC700600C50 /* ContinuousHabitsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContinuousHabitsView.swift; sourceTree = "<group>"; };
+		F4DA6C932CE2BBEB00600C50 /* WeeklyHabitsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeeklyHabitsView.swift; sourceTree = "<group>"; };
+		F4DA6C962CE2C38600600C50 /* TodoItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoItem.swift; sourceTree = "<group>"; };
+		F4DA6C9B2CE2C9CC00600C50 /* ContinuousHabitDetailsCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContinuousHabitDetailsCard.swift; sourceTree = "<group>"; };
+		F4DA6CA02CE2D77A00600C50 /* AddContinuousHabitView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddContinuousHabitView.swift; sourceTree = "<group>"; };
+		F4DA6CA42CE2D90700600C50 /* AnalyzeHabitView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnalyzeHabitView.swift; sourceTree = "<group>"; };
+		F4DA6CA62CE2DC0300600C50 /* EditContinuousHabit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditContinuousHabit.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +77,7 @@
 		F4DA6C6F2CE072DB00600C50 /* Kansei */ = {
 			isa = PBXGroup;
 			children = (
+				F4DA6C982CE2C4A000600C50 /* Models */,
 				F4DA6C882CE09B1100600C50 /* Screens */,
 				F4DA6C802CE0960200600C50 /* Views */,
 				F4DA6C702CE072DB00600C50 /* KanseiApp.swift */,
@@ -78,6 +99,8 @@
 		F4DA6C802CE0960200600C50 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				F4DA6C9D2CE2D48400600C50 /* Modals */,
+				F4DA6C952CE2C37500600C50 /* Components */,
 				F4DA6C812CE0968400600C50 /* Cards */,
 			);
 			path = Views;
@@ -89,6 +112,7 @@
 				F4DA6C822CE0969400600C50 /* DailyHabitCard.swift */,
 				F4DA6C842CE096C700600C50 /* ContinuousHabitCard.swift */,
 				F4DA6C862CE096E400600C50 /* WeeklyHabitCard.swift */,
+				F4DA6C9B2CE2C9CC00600C50 /* ContinuousHabitDetailsCard.swift */,
 			);
 			path = Cards;
 			sourceTree = "<group>";
@@ -96,8 +120,38 @@
 		F4DA6C882CE09B1100600C50 /* Screens */ = {
 			isa = PBXGroup;
 			children = (
+				F4DA6C892CE2B93000600C50 /* HomeView.swift */,
+				F4DA6C8B2CE2B96000600C50 /* StatsView.swift */,
+				F4DA6C8D2CE2BB5400600C50 /* DailyHabitsView.swift */,
+				F4DA6C912CE2BBC700600C50 /* ContinuousHabitsView.swift */,
+				F4DA6C932CE2BBEB00600C50 /* WeeklyHabitsView.swift */,
 			);
 			path = Screens;
+			sourceTree = "<group>";
+		};
+		F4DA6C952CE2C37500600C50 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				F4DA6C962CE2C38600600C50 /* TodoItem.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		F4DA6C982CE2C4A000600C50 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		F4DA6C9D2CE2D48400600C50 /* Modals */ = {
+			isa = PBXGroup;
+			children = (
+				F4DA6CA02CE2D77A00600C50 /* AddContinuousHabitView.swift */,
+				F4DA6CA42CE2D90700600C50 /* AnalyzeHabitView.swift */,
+				F4DA6CA62CE2DC0300600C50 /* EditContinuousHabit.swift */,
+			);
+			path = Modals;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -174,6 +228,20 @@
 				F4DA6C732CE072DB00600C50 /* ContentView.swift in Sources */,
 				F4DA6C852CE096C700600C50 /* ContinuousHabitCard.swift in Sources */,
 				F4DA6C712CE072DB00600C50 /* KanseiApp.swift in Sources */,
+				F4DA6CA52CE2D90700600C50 /* AnalyzeHabitView.swift in Sources */,
+				F4DA6CA12CE2D77A00600C50 /* AddContinuousHabitView.swift in Sources */,
+				F4DA6C872CE096E400600C50 /* WeeklyHabitCard.swift in Sources */,
+				F4DA6C8E2CE2BB5400600C50 /* DailyHabitsView.swift in Sources */,
+				F4DA6C942CE2BBEB00600C50 /* WeeklyHabitsView.swift in Sources */,
+				F4DA6C732CE072DB00600C50 /* ContentView.swift in Sources */,
+				F4DA6C852CE096C700600C50 /* ContinuousHabitCard.swift in Sources */,
+				F4DA6C972CE2C38600600C50 /* TodoItem.swift in Sources */,
+				F4DA6C922CE2BBC700600C50 /* ContinuousHabitsView.swift in Sources */,
+				F4DA6C8A2CE2B93000600C50 /* HomeView.swift in Sources */,
+				F4DA6C9C2CE2C9CC00600C50 /* ContinuousHabitDetailsCard.swift in Sources */,
+				F4DA6CA72CE2DC0300600C50 /* EditContinuousHabit.swift in Sources */,
+				F4DA6C712CE072DB00600C50 /* KanseiApp.swift in Sources */,
+				F4DA6C8C2CE2B96000600C50 /* StatsView.swift in Sources */,
 				F4DA6C832CE0969400600C50 /* DailyHabitCard.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

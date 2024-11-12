@@ -2,8 +2,6 @@
 //  KanseiApp.swift
 //  Kansei
 //
-//  Created by Abdullah Saleh on 11/9/24.
-//
 
 import SwiftUI
 
