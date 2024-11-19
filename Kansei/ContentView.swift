@@ -10,6 +10,7 @@ struct ContentView: View {
         TabView {
             HomeView()
                 .tabItem { Image(systemName: "house") }
+                .environmentObject(HabitsViewModel())
             StatsView()
                 .tabItem { Image(systemName: "chart.bar") }
         }

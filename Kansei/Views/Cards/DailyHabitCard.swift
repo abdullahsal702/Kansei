@@ -6,6 +6,9 @@
 import SwiftUI
 
 struct DailyHabitCard: View {
+    
+    @EnvironmentObject var dailyHabitsViewModel: HabitsViewModel
+    
     var body: some View {
         NavigationLink(destination: DailyHabitsView()) {
             RoundedRectangle(cornerRadius: /*@START_MENU_TOKEN@*/25.0/*@END_MENU_TOKEN@*/)
@@ -23,11 +26,20 @@ struct DailyHabitCard: View {
                         Spacer()
                     }
                     VStack (alignment: .leading){
-                        TodoItem(title: "Make bed", checked: true)
-                        TodoItem(title: "Morning routine", checked: true)
-                        TodoItem(title: "1 leetcode", checked: true)
-                        TodoItem(title: "Pushups", checked: true)
-                        TodoItem(title: "Nighttime routine", checked: false)
+                        if dailyHabitsViewModel.dailyTasks.count > 0 {
+                            ForEach(dailyHabitsViewModel.dailyTasks) { task in
+                                TodoItem(title: task.title, checked: task.completed)
+                                    .onTapGesture {
+                                        withAnimation(.linear) {
+                                            dailyHabitsViewModel.updateDailyTask(task: task)
+                                        }
+                                    }
+                            }
+                        } else {
+                            NoHabits(type: "daily")
+                                .padding(.leading, 12)
+                                .padding(.top, 20)
+                        }
                     }
                     .padding(.leading, 24)
                     .padding(.trailing, 20)
@@ -40,4 +52,5 @@ struct DailyHabitCard: View {
 
 #Preview {
     DailyHabitCard()
+        .environmentObject(HabitsViewModel())
 }

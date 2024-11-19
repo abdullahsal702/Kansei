@@ -32,9 +32,22 @@ struct HomeView: View {
 }
 
 struct GreetingTitle: View {
+    
+    private var greeting: String {
+            let hour = Calendar.current.component(.hour, from: Date())
+            switch hour {
+            case 6..<12:
+                return "Good morning"
+            case 12..<18:
+                return "Good afternoon"
+            default:
+                return "Good evening"
+            }
+        }
+    
     var body: some View {
         HStack {
-            Text("Good morning")
+            Text(greeting)
                 .font(.largeTitle)
                 .bold()
                 .padding(.leading, 20)

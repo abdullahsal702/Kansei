@@ -2,13 +2,15 @@
 //  WeeklyHabitCard.swift
 //  Kansei
 //
-//  Created by Abdullah Saleh on 11/10/24.
 //
 
 import SwiftUI
 
 struct WeeklyHabitCard: View {
-    var body: some View {       
+    
+    @EnvironmentObject var weeklyHabitsViewModel: HabitsViewModel
+    
+    var body: some View {
         NavigationLink(destination: WeeklyHabitsView()) {
             RoundedRectangle(cornerRadius: 25.0)
                 .fill(Color(hue: 0.799, saturation: 1.0, brightness: 0.751).gradient)
@@ -20,18 +22,28 @@ struct WeeklyHabitCard: View {
                             .bold()
                             .font(.title2)
                             .foregroundColor(.white)
-                            .padding()
-                            .padding(.leading, 10)
+                            .padding(.top, 16)
+                            .padding(.leading, 30)
                         Spacer()
                     }
-                    VStack{
-                        Image(systemName: "plus.circle.fill")
-                            .symbolRenderingMode(.monochrome)
-                            .resizable()
-                            .frame(width: 22, height: 22)
-                        Text("Add a weekly habit")
-                            .fontWeight(.light)
-                            .padding(.top, 4)
+                    VStack (alignment: .leading){
+                        if weeklyHabitsViewModel.weeklyTasks.count > 0 {
+                            ForEach(weeklyHabitsViewModel.weeklyTasks) { task in
+                                // Shouldn't need an HStack here, fix later
+                                HStack {
+                                    TodoItem(title: task.title, checked: task.completed)
+                                        .onTapGesture {
+                                            withAnimation(.linear) {
+                                                weeklyHabitsViewModel.updateWeeklyTask(task: task)
+                                            }
+                                        }
+                                    Spacer()
+                                }
+                                .padding(.leading, 30)
+                            }
+                        } else {
+                            NoHabits(type: "weekly")
+                        }
                     }
                     Spacer()
                 })
