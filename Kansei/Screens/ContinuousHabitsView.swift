@@ -7,6 +7,8 @@
 import SwiftUI
 
 struct ContinuousHabitsView: View {
+    @EnvironmentObject var continuousHabitsViewModel: ContinuousHabitsViewModel
+
     @State private var isModalPresented = false
     
     var body: some View {
@@ -18,7 +20,6 @@ struct ContinuousHabitsView: View {
             Text("consistent action throughout the day")
                 .padding(.bottom, 30)
             HStack {
-                // Spacer() // How do I make this behave like flex?
                 Image(systemName: "plus.circle.fill")
                     .symbolRenderingMode(.monochrome)
                     .resizable()
@@ -32,16 +33,23 @@ struct ContinuousHabitsView: View {
             }
             .padding(.bottom)
             
-            // add lazy vstack here
-            ContinuousHabitDetailsCard()
-                .sheet(isPresented: $isModalPresented) {
-                    AddContinuousHabitView()
+            ScrollView {
+                LazyVStack {
+                    ForEach(continuousHabitsViewModel.continuousHabits) { habit in
+                        ContinuousHabitDetailsCard(habit: habit)
+                    }
                 }
+            }
             Spacer()
         }
+        .sheet(isPresented: $isModalPresented) {
+            AddContinuousHabitView()
+        }
+        .padding(26)
     }
 }
 
 #Preview {
     ContinuousHabitsView()
+        .environmentObject(ContinuousHabitsViewModel())
 }

@@ -6,6 +6,8 @@
 import SwiftUI
 
 struct ContinuousHabitCard: View {
+    @EnvironmentObject var continuousHabitsViewModel: ContinuousHabitsViewModel
+    
     var body: some View {
         NavigationLink(destination: ContinuousHabitsView()) {
             RoundedRectangle(cornerRadius: /*@START_MENU_TOKEN@*/25.0/*@END_MENU_TOKEN@*/)
@@ -22,7 +24,11 @@ struct ContinuousHabitCard: View {
                             .padding(.bottom, 0)
                         Spacer()
                     }
-                    ContinuousHabit()
+                    ForEach(continuousHabitsViewModel.continuousHabits.prefix(2)) { habit in
+                        let completed = habit.checkIns.filter {$0.completed}.count
+                        let total = habit.checkIns.count
+                        ContinuousHabitProgressBar(title: habit.title, completed: completed, total: total)
+                    }
                     Spacer()
                 })
         }
@@ -31,23 +37,5 @@ struct ContinuousHabitCard: View {
 
 #Preview {
     ContinuousHabitCard()
-}
-
-struct ContinuousHabit: View {
-    var body: some View {
-        RoundedRectangle(cornerRadius: 6)
-            .fill(Color.white)
-            .frame(height: 60)
-            .padding()
-            .padding(.trailing, 12)
-            .overlay(
-                VStack (alignment: .leading ){
-                    Text("Fix Posture")
-                        .font(.system(size: 16))
-                    Text("2/3 check-ins")
-                        .font(.system(size: 12))
-                }
-            )
-
-    }
+        .environmentObject(ContinuousHabitsViewModel())
 }

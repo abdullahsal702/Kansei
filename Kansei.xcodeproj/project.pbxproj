@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F48051C32CF410AC001E3335 /* ContinuousHabitsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F48051C22CF410AC001E3335 /* ContinuousHabitsViewModel.swift */; };
+		F48051C72CF431C0001E3335 /* ContinuousHabitProgressBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = F48051C62CF431C0001E3335 /* ContinuousHabitProgressBar.swift */; };
 		F489A0882CEBB35D0056EA07 /* Habits.swift in Sources */ = {isa = PBXBuildFile; fileRef = F489A0872CEBB35D0056EA07 /* Habits.swift */; };
 		F489A08D2CEC0AC20056EA07 /* NoHabits.swift in Sources */ = {isa = PBXBuildFile; fileRef = F489A08C2CEC0AC20056EA07 /* NoHabits.swift */; };
 		F489A08F2CEC0E710056EA07 /* HabitsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F489A08E2CEC0E710056EA07 /* HabitsViewModel.swift */; };
@@ -30,6 +32,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		F48051C22CF410AC001E3335 /* ContinuousHabitsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContinuousHabitsViewModel.swift; sourceTree = "<group>"; };
+		F48051C62CF431C0001E3335 /* ContinuousHabitProgressBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContinuousHabitProgressBar.swift; sourceTree = "<group>"; };
 		F489A0872CEBB35D0056EA07 /* Habits.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Habits.swift; sourceTree = "<group>"; };
 		F489A08C2CEC0AC20056EA07 /* NoHabits.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoHabits.swift; sourceTree = "<group>"; };
 		F489A08E2CEC0E710056EA07 /* HabitsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HabitsViewModel.swift; sourceTree = "<group>"; };
@@ -68,6 +72,7 @@
 			isa = PBXGroup;
 			children = (
 				F489A08E2CEC0E710056EA07 /* HabitsViewModel.swift */,
+				F48051C22CF410AC001E3335 /* ContinuousHabitsViewModel.swift */,
 			);
 			path = "View Models";
 			sourceTree = "<group>";
@@ -149,6 +154,7 @@
 			children = (
 				F4DA6C962CE2C38600600C50 /* TodoItem.swift */,
 				F489A08C2CEC0AC20056EA07 /* NoHabits.swift */,
+				F48051C62CF431C0001E3335 /* ContinuousHabitProgressBar.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -241,6 +247,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F48051C72CF431C0001E3335 /* ContinuousHabitProgressBar.swift in Sources */,
 				F4DA6C872CE096E400600C50 /* WeeklyHabitCard.swift in Sources */,
 				F4DA6C732CE072DB00600C50 /* ContentView.swift in Sources */,
 				F4DA6C852CE096C700600C50 /* ContinuousHabitCard.swift in Sources */,
@@ -259,6 +266,7 @@
 				F4DA6C922CE2BBC700600C50 /* ContinuousHabitsView.swift in Sources */,
 				F4DA6C8A2CE2B93000600C50 /* HomeView.swift in Sources */,
 				F4DA6C9C2CE2C9CC00600C50 /* ContinuousHabitDetailsCard.swift in Sources */,
+				F48051C32CF410AC001E3335 /* ContinuousHabitsViewModel.swift in Sources */,
 				F4DA6CA72CE2DC0300600C50 /* EditContinuousHabit.swift in Sources */,
 				F4DA6C712CE072DB00600C50 /* KanseiApp.swift in Sources */,
 				F4DA6C8C2CE2B96000600C50 /* StatsView.swift in Sources */,

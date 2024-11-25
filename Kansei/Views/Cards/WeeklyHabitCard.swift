@@ -54,4 +54,5 @@ struct WeeklyHabitCard: View {
 
 #Preview {
     WeeklyHabitCard()
+        .environmentObject(HabitsViewModel())
 }
