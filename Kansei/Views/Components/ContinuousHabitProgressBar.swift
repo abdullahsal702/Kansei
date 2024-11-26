@@ -24,7 +24,7 @@ struct ContinuousHabitProgressBar: View {
                     Text("\(completed)/\(total) check-ins")
                         .font(.system(size: 12))
                         .foregroundColor(.blue)
-                }
+                }.padding(.trailing, 36)
             )
     }
 }

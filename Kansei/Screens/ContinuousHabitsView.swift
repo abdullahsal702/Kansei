@@ -34,7 +34,7 @@ struct ContinuousHabitsView: View {
             .padding(.bottom)
             
             ScrollView {
-                LazyVStack {
+                LazyVStack (spacing: 20) {
                     ForEach(continuousHabitsViewModel.continuousHabits) { habit in
                         ContinuousHabitDetailsCard(habit: habit)
                     }

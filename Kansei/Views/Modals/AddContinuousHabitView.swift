@@ -78,6 +78,7 @@ struct AddContinuousHabitView: View {
             Spacer()
             Button(action: {
                 continuousHabitsViewModel.createContinuousHabit(title: titleInput, description: descriptionInput, numCheckIns: numCheckIns, checkInStart: checkInStart, checkInEnd: checkInEnd)
+                dismiss()
             }) {
                 Text("Create")
                     .font(.headline)
