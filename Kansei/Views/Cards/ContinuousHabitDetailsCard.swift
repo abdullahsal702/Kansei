@@ -32,7 +32,7 @@ struct ContinuousHabitDetailsCard: View {
                     .bold()
                     .font(.title)
                 Spacer()
-                Image(systemName: "pencil")
+//                Image(systemName: "pencil")
             }
             .padding(.bottom, 2)
             Text(habit.description)

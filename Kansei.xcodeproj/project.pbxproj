@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F467903A2D07B09F007F57DF /* SplashScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = F46790392D07B09F007F57DF /* SplashScreen.swift */; };
 		F47CB24C2D065FA3004376F4 /* GenerativeAI-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F47CB24B2D065FA3004376F4 /* GenerativeAI-Info.plist */; };
 		F47CB24E2D066011004376F4 /* APIKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = F47CB24D2D066011004376F4 /* APIKey.swift */; };
 		F47CB2512D0660F9004376F4 /* GoogleGenerativeAI in Frameworks */ = {isa = PBXBuildFile; productRef = F47CB2502D0660F9004376F4 /* GoogleGenerativeAI */; };
@@ -36,6 +37,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		F46790392D07B09F007F57DF /* SplashScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashScreen.swift; sourceTree = "<group>"; };
 		F47CB24B2D065FA3004376F4 /* GenerativeAI-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GenerativeAI-Info.plist"; sourceTree = "<group>"; };
 		F47CB24D2D066011004376F4 /* APIKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIKey.swift; sourceTree = "<group>"; };
 		F47CB2552D06C57E004376F4 /* PieChart.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PieChart.swift; sourceTree = "<group>"; };
@@ -163,6 +165,7 @@
 				F4DA6C8D2CE2BB5400600C50 /* DailyHabitsView.swift */,
 				F4DA6C912CE2BBC700600C50 /* ContinuousHabitsView.swift */,
 				F4DA6C932CE2BBEB00600C50 /* WeeklyHabitsView.swift */,
+				F46790392D07B09F007F57DF /* SplashScreen.swift */,
 			);
 			path = Screens;
 			sourceTree = "<group>";
@@ -282,6 +285,7 @@
 				F489A08F2CEC0E710056EA07 /* HabitsViewModel.swift in Sources */,
 				F4DA6CA52CE2D90700600C50 /* AnalyzeHabitView.swift in Sources */,
 				F4DA6CA12CE2D77A00600C50 /* AddContinuousHabitView.swift in Sources */,
+				F467903A2D07B09F007F57DF /* SplashScreen.swift in Sources */,
 				F489A0882CEBB35D0056EA07 /* Habits.swift in Sources */,
 				F4DA6C872CE096E400600C50 /* WeeklyHabitCard.swift in Sources */,
 				F4DA6C8E2CE2BB5400600C50 /* DailyHabitsView.swift in Sources */,

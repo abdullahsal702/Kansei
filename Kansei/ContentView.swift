@@ -9,14 +9,27 @@ struct ContentView: View {
     @AppStorage("streakCount") private var streakCount = 1
     @AppStorage("lastActiveDate") private var lastActiveDate: String = ""
     
+    @State private var showSplash = true
+    
     var body: some View {
         TabView {
-            HomeView(streakCount: streakCount)
-                .tabItem { Image(systemName: "house").padding(.top, 10) }
-            StatsView()
-                .tabItem { Image(systemName: "sparkles").padding(.top, 10) }
+            if showSplash {
+                SplashScreen()
+                    .transition(.opacity)
+            } else {
+                HomeView(streakCount: streakCount)
+                    .tabItem { Image(systemName: "house").padding(.top, 10) }
+                StatsView()
+                    .tabItem { Image(systemName: "sparkles").padding(.top, 10) }
+            }
         }
         .onAppear {
+            DispatchQueue.main
+                .asyncAfter(deadline: .now() + 1.5) {
+                    withAnimation(.easeOut(duration: 1.5)) {
+                        self.showSplash = false
+                    }
+                }
             updateStreak()
         }
     }
