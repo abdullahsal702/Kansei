@@ -49,6 +49,7 @@ struct GreetingTitle: View {
         HStack {
             Text(greeting)
                 .font(.largeTitle)
+                .foregroundColor(.white)
                 .bold()
                 .padding(.leading, 20)
             Spacer()
@@ -58,4 +59,6 @@ struct GreetingTitle: View {
 
 #Preview {
     HomeView()
+        .environmentObject(HabitsViewModel())
+        .environmentObject(ContinuousHabitsViewModel())
 }

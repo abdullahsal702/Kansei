@@ -16,6 +16,7 @@ struct TodoItem: View {
                     .resizable()
                     .frame(width: 12, height: 12)
                 Text(title)
+                    .foregroundColor(.white)
             }
         }
 }

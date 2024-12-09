@@ -6,7 +6,7 @@
 
 import Foundation
 
-struct TodoTask: Identifiable {
+struct TodoTask: Identifiable, Codable {
     let id: UUID
     let title: String
     let completed: Bool
@@ -23,8 +23,8 @@ struct TodoTask: Identifiable {
     
 }
 
-struct ContinuousTask: Identifiable {
-    let id = UUID()
+struct ContinuousTask: Identifiable, Codable {
+    var id = UUID()
     var title: String
     var description: String
     var numCheckIns: Int
@@ -33,4 +33,15 @@ struct ContinuousTask: Identifiable {
     var checkIns: [TodoTask]
 }
 
+func formatDate(_ date: Date) -> String {
+    let formatter = DateFormatter()
+    formatter.dateFormat = "yyyy-MM-dd"
+    return formatter.string(from: date)
+}
 
+func formatWeek(_ date: Date) -> String {
+    let calendar = Calendar.current
+    let year = calendar.component(.yearForWeekOfYear, from: date)
+    let weekOfYear = calendar.component(.weekOfYear, from: date)
+    return "\(year)-W\(String(format: "%02d", weekOfYear))"
+}
