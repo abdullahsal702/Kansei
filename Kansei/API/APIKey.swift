@@ -6,7 +6,7 @@
 import Foundation
 
 enum APIKey {
-  // Fetch the API key from `GenerativeAI-Info.plist`
+  // API Key is in `GenerativeAI-Info.plist`
   static var `default`: String {
     guard let filePath = Bundle.main.path(forResource: "GenerativeAI-Info", ofType: "plist")
     else {

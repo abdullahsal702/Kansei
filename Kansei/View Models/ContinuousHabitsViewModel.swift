@@ -50,5 +50,9 @@ class ContinuousHabitsViewModel: ObservableObject {
         .sorted()
     }
     
+    func completedCheckInsCount() -> Int {
+        continuousHabits.reduce(0) { $0 + $1.checkIns.filter { $0.completed }.count }
+    }
+    
 }
 

@@ -33,15 +33,8 @@ struct ContinuousTask: Identifiable, Codable {
     var checkIns: [TodoTask]
 }
 
-func formatDate(_ date: Date) -> String {
-    let formatter = DateFormatter()
-    formatter.dateFormat = "yyyy-MM-dd"
-    return formatter.string(from: date)
-}
-
-func formatWeek(_ date: Date) -> String {
-    let calendar = Calendar.current
-    let year = calendar.component(.yearForWeekOfYear, from: date)
-    let weekOfYear = calendar.component(.weekOfYear, from: date)
-    return "\(year)-W\(String(format: "%02d", weekOfYear))"
+struct Tasks: Encodable {
+    let dailyTasks: [TodoTask]
+    let weeklyTasks: [TodoTask]
+    let continuousHabits: [ContinuousTask]
 }

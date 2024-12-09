@@ -31,6 +31,7 @@ struct ContinuousHabitDetailsCard: View {
                 Text(habit.title)
                     .bold()
                     .font(.title)
+                Spacer()
                 Image(systemName: "pencil")
             }
             .padding(.bottom, 2)

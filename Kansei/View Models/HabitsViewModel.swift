@@ -52,6 +52,10 @@ class HabitsViewModel: ObservableObject {
         }
     }
     
+    func completedDailyTasksCount() -> Int {
+        dailyTasks.filter { $0.completed }.count
+    }
+    
     func addWeeklyTask(title: String) {
         let newTask = TodoTask(title: title, completed: false)
         weeklyTasks.append(newTask)
@@ -69,6 +73,10 @@ class HabitsViewModel: ObservableObject {
         if let index = weeklyTasks.firstIndex(where: {$0.id == task.id}) {
             weeklyTasks[index] = task.updateTask()
         }
+    }
+    
+    func completedWeeklyTasksCount() -> Int {
+        weeklyTasks.filter { $0.completed }.count
     }
     
 }

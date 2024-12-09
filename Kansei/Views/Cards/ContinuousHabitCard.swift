@@ -13,8 +13,8 @@ struct ContinuousHabitCard: View {
             RoundedRectangle(cornerRadius: /*@START_MENU_TOKEN@*/25.0/*@END_MENU_TOKEN@*/)
                 .fill(Color(hue: 0.558, saturation: 1.0, brightness: 1.0).gradient)
                 .frame(height: 270)
-                .padding(.trailing, 12) // why is this padding throwing things off?
-                .overlay(VStack {
+                .padding(.trailing, 4) // why is this padding throwing things off?
+                .overlay(VStack () {
                     HStack {
                         Text ("Continuous")
                             .bold()

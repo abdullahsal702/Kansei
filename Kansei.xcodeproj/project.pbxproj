@@ -10,7 +10,7 @@
 		F47CB24C2D065FA3004376F4 /* GenerativeAI-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F47CB24B2D065FA3004376F4 /* GenerativeAI-Info.plist */; };
 		F47CB24E2D066011004376F4 /* APIKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = F47CB24D2D066011004376F4 /* APIKey.swift */; };
 		F47CB2512D0660F9004376F4 /* GoogleGenerativeAI in Frameworks */ = {isa = PBXBuildFile; productRef = F47CB2502D0660F9004376F4 /* GoogleGenerativeAI */; };
-		F47CB2542D067EB3004376F4 /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F47CB2532D067EB3004376F4 /* APIManager.swift */; };
+		F47CB2562D06C57E004376F4 /* PieChart.swift in Sources */ = {isa = PBXBuildFile; fileRef = F47CB2552D06C57E004376F4 /* PieChart.swift */; };
 		F48051C32CF410AC001E3335 /* ContinuousHabitsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F48051C22CF410AC001E3335 /* ContinuousHabitsViewModel.swift */; };
 		F48051C72CF431C0001E3335 /* ContinuousHabitProgressBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = F48051C62CF431C0001E3335 /* ContinuousHabitProgressBar.swift */; };
 		F489A0882CEBB35D0056EA07 /* Habits.swift in Sources */ = {isa = PBXBuildFile; fileRef = F489A0872CEBB35D0056EA07 /* Habits.swift */; };
@@ -38,7 +38,7 @@
 /* Begin PBXFileReference section */
 		F47CB24B2D065FA3004376F4 /* GenerativeAI-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GenerativeAI-Info.plist"; sourceTree = "<group>"; };
 		F47CB24D2D066011004376F4 /* APIKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIKey.swift; sourceTree = "<group>"; };
-		F47CB2532D067EB3004376F4 /* APIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIManager.swift; sourceTree = "<group>"; };
+		F47CB2552D06C57E004376F4 /* PieChart.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PieChart.swift; sourceTree = "<group>"; };
 		F48051C22CF410AC001E3335 /* ContinuousHabitsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContinuousHabitsViewModel.swift; sourceTree = "<group>"; };
 		F48051C62CF431C0001E3335 /* ContinuousHabitProgressBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContinuousHabitProgressBar.swift; sourceTree = "<group>"; };
 		F489A0872CEBB35D0056EA07 /* Habits.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Habits.swift; sourceTree = "<group>"; };
@@ -80,7 +80,6 @@
 			isa = PBXGroup;
 			children = (
 				F47CB24D2D066011004376F4 /* APIKey.swift */,
-				F47CB2532D067EB3004376F4 /* APIManager.swift */,
 			);
 			path = API;
 			sourceTree = "<group>";
@@ -174,6 +173,7 @@
 				F4DA6C962CE2C38600600C50 /* TodoItem.swift */,
 				F489A08C2CEC0AC20056EA07 /* NoHabits.swift */,
 				F48051C62CF431C0001E3335 /* ContinuousHabitProgressBar.swift */,
+				F47CB2552D06C57E004376F4 /* PieChart.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -283,10 +283,10 @@
 				F4DA6CA52CE2D90700600C50 /* AnalyzeHabitView.swift in Sources */,
 				F4DA6CA12CE2D77A00600C50 /* AddContinuousHabitView.swift in Sources */,
 				F489A0882CEBB35D0056EA07 /* Habits.swift in Sources */,
-				F47CB2542D067EB3004376F4 /* APIManager.swift in Sources */,
 				F4DA6C872CE096E400600C50 /* WeeklyHabitCard.swift in Sources */,
 				F4DA6C8E2CE2BB5400600C50 /* DailyHabitsView.swift in Sources */,
 				F4DA6C942CE2BBEB00600C50 /* WeeklyHabitsView.swift in Sources */,
+				F47CB2562D06C57E004376F4 /* PieChart.swift in Sources */,
 				F4DA6C732CE072DB00600C50 /* ContentView.swift in Sources */,
 				F4DA6C852CE096C700600C50 /* ContinuousHabitCard.swift in Sources */,
 				F4DA6C972CE2C38600600C50 /* TodoItem.swift in Sources */,
