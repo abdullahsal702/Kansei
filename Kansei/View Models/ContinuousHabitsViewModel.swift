@@ -50,6 +50,12 @@ class ContinuousHabitsViewModel: ObservableObject {
         .sorted()
     }
     
+    func deleteContinuousHabit(by id: UUID) {
+        if let index = continuousHabits.firstIndex(where: { $0.id == id }) {
+            continuousHabits.remove(at: index)
+        }
+    }
+    
     func completedCheckInsCount() -> Int {
         continuousHabits.reduce(0) { $0 + $1.checkIns.filter { $0.completed }.count }
     }

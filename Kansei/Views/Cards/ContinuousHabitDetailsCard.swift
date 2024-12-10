@@ -9,12 +9,6 @@ struct ContinuousHabitDetailsCard: View {
     @EnvironmentObject var continuousHabitsViewModel: ContinuousHabitsViewModel
 
     let columns = [GridItem(.flexible()), GridItem(.flexible())]
-//    let title: String
-//    let description: String
-//    let numCheckIns: Int
-//    let checkInStart: Date
-//    let checkInEnd: Date
-//    let checkIns: [TodoTask]
     let habit: ContinuousTask
     let continuousHabits = [ TodoItem(title: "11am check-in", checked: true), TodoItem(title: "12:42pm check-in", checked: true), TodoItem(title: "2pm check-in", checked: false) ]
     
@@ -32,7 +26,10 @@ struct ContinuousHabitDetailsCard: View {
                     .bold()
                     .font(.title)
                 Spacer()
-//                Image(systemName: "pencil")
+                Image(systemName: "x.circle.fill")
+                    .onTapGesture {
+                        continuousHabitsViewModel.deleteContinuousHabit(by: habit.id)
+                    }
             }
             .padding(.bottom, 2)
             Text(habit.description)

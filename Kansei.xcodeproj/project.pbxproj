@@ -38,6 +38,7 @@
 
 /* Begin PBXFileReference section */
 		F46790392D07B09F007F57DF /* SplashScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashScreen.swift; sourceTree = "<group>"; };
+		F467903B2D07C2DE007F57DF /* Citations.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = Citations.md; sourceTree = "<group>"; };
 		F47CB24B2D065FA3004376F4 /* GenerativeAI-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GenerativeAI-Info.plist"; sourceTree = "<group>"; };
 		F47CB24D2D066011004376F4 /* APIKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIKey.swift; sourceTree = "<group>"; };
 		F47CB2552D06C57E004376F4 /* PieChart.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PieChart.swift; sourceTree = "<group>"; };
@@ -124,6 +125,7 @@
 				F4DA6C742CE072E000600C50 /* Assets.xcassets */,
 				F4DA6C762CE072E000600C50 /* Preview Content */,
 				F47CB24B2D065FA3004376F4 /* GenerativeAI-Info.plist */,
+				F467903B2D07C2DE007F57DF /* Citations.md */,
 			);
 			path = Kansei;
 			sourceTree = "<group>";
